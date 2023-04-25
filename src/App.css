@@ -4,7 +4,7 @@
 
 @layer base {
     font-family {
-        font-family: "Jeopardy";
+        font-family: "Sacremento", sans-serif;
         src: url("/public/fonts/gyparodyHv-Regular.ttf");
     }
 }

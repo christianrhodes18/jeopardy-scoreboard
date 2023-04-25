@@ -12,9 +12,9 @@ function Contesant({ name }) {
   return (
     <div className="flex flex-col">
       <div className="flex justify-center items-center mb-6">
-        <div className="py-6 px-12 text-xl bg-white rounded-lg shadow-lg text-center">
+        <div className="py-4 px-12 text-xl bg-white rounded-lg shadow-lg text-center">
+          <h2 className="text-gray-700 font-sacramento text-4xl">{name}</h2>
           <h2 className="font-bold mb-2">{points}</h2>
-          <p className="text-gray-700 font-bold">{name}</p>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">

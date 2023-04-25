@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'jeopardy': ['Jeopardy'],
         'open-sans': ['Open Sans'],
+        'sacramento': ['Sacramento'],
      }
     }
   },
