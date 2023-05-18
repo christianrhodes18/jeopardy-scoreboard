@@ -1,10 +1,17 @@
+import { useState } from "react";
 import Contesant from "./components/Contestant";
 import logo from "./img/jewpardy_logo.jpg";
 
 function App() {
 
-  const resetScores = () => {
-    console.log("Resetting Scores");
+  // const resetScores = () => {
+  //   console.log("Resetting Scores");
+  // };
+
+  const [name, setName] = useState("Isabella");
+
+  const updateNames = () => {
+    setName(name);
   };
 
   return (
@@ -21,9 +28,9 @@ function App() {
           {/* <h1 className=" font-jeopardy text-[5rem] my-4">Jewpardy</h1> */}
         </nav>
         <main className="flex flex-row justify-evenly">
-          <Contesant name="Isabella" />
-          <Contesant name="James" />
-          <Contesant name="Jacob" />
+          <Contesant onUpdate={updateNames} />
+          <Contesant onUpdate={updateNames} />
+          <Contesant onUpdate={updateNames} />
         </main>
         {/* <div className="flex justify-center">
           <button className="py-4 px-12 mt-12 text-xl bg-white rounded-lg shadow-lg text-center" onClick={resetScores}>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ScoreChangeButtonDynamic({onClick, value}) {
+function ScoreChangeButtonDynamic({onClick}) {
     const [customPoints, setCustomPoints] = useState(0);
 
     const handleChange = (event) => {
@@ -16,8 +16,8 @@ function ScoreChangeButtonDynamic({onClick, value}) {
             >
               -
             </button>
-            <span className="mx-6 text-gray-700 font-bold">
-                <input type="number" min="0" placeholder="amount..." className="w-20 text-center text-xs" onChange={handleChange}/>
+            <span className="text-gray-700 font-bold">
+                <input type="number" min="0" placeholder="amount..." className="w-24 h-12 text-center" onChange={handleChange}/>
             </span>
             <button
               className="text-gray-700 hover:text-gray-900 text-3xl"
