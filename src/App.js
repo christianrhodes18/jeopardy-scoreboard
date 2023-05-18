@@ -25,11 +25,11 @@ function App() {
           <Contesant name="James" />
           <Contesant name="Jacob" />
         </main>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="py-4 px-12 mt-12 text-xl bg-white rounded-lg shadow-lg text-center" onClick={resetScores}>
             Reset Scores
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

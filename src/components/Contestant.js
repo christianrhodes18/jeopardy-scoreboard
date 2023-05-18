@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ScoreChangeButton from "./ScoreChangeButton";
+import ScoreChangeButtonDynamic from "./ScoreChangeButtonDynamic";
 
 function Contesant({ name }) {
   const [points, setPoints] = useState(0);
@@ -23,6 +24,7 @@ function Contesant({ name }) {
           <ScoreChangeButton onClick={updatePoints} value={300} />
           <ScoreChangeButton onClick={updatePoints} value={400} />
           <ScoreChangeButton onClick={updatePoints} value={500} />
+          <ScoreChangeButtonDynamic onClick={updatePoints} value={points} />
       </div>
     </div>
   );
