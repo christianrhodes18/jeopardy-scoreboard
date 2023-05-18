@@ -24,8 +24,7 @@ function App() {
 
       <div className="bg-gray-100 h-screen">
         <nav className="flex justify-center p-6">
-          <img src={logo} alt="logo" width={500} />
-          {/* <h1 className=" font-jeopardy text-[5rem] my-4">Jewpardy</h1> */}
+          {/* <img src={logo} alt="logo" width={500} /> */}
         </nav>
         <main className="flex flex-row justify-evenly">
           <Contesant onUpdate={updateNames} />
