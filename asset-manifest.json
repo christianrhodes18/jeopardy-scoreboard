@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/jeopardy-scoreboard/static/css/main.5135eb4d.css",
-    "main.js": "/jeopardy-scoreboard/static/js/main.2599fd0d.js",
+    "main.js": "/jeopardy-scoreboard/static/js/main.47bc6a32.js",
     "static/js/787.a471c82a.chunk.js": "/jeopardy-scoreboard/static/js/787.a471c82a.chunk.js",
     "static/media/jewpardy_logo.jpg": "/jeopardy-scoreboard/static/media/jewpardy_logo.f2397602a8ed8f58e999.jpg",
     "index.html": "/jeopardy-scoreboard/index.html",
     "main.5135eb4d.css.map": "/jeopardy-scoreboard/static/css/main.5135eb4d.css.map",
-    "main.2599fd0d.js.map": "/jeopardy-scoreboard/static/js/main.2599fd0d.js.map",
+    "main.47bc6a32.js.map": "/jeopardy-scoreboard/static/js/main.47bc6a32.js.map",
     "787.a471c82a.chunk.js.map": "/jeopardy-scoreboard/static/js/787.a471c82a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5135eb4d.css",
-    "static/js/main.2599fd0d.js"
+    "static/js/main.47bc6a32.js"
   ]
 }
