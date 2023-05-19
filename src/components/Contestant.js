@@ -25,11 +25,11 @@ function Contesant({ onUpdate }) {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-          <ScoreChangeButton onClick={updatePoints} value={100} />
           <ScoreChangeButton onClick={updatePoints} value={200} />
-          <ScoreChangeButton onClick={updatePoints} value={300} />
           <ScoreChangeButton onClick={updatePoints} value={400} />
-          <ScoreChangeButton onClick={updatePoints} value={500} />
+          <ScoreChangeButton onClick={updatePoints} value={600} />
+          <ScoreChangeButton onClick={updatePoints} value={800} />
+          <ScoreChangeButton onClick={updatePoints} value={1000} />
           <ScoreChangeButtonDynamic onClick={updatePoints} />
       </div>
     </div>
