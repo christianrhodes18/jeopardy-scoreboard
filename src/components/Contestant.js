@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ScoreChangeButton from "./ScoreChangeButton";
 import ScoreChangeButtonDynamic from "./ScoreChangeButtonDynamic";
 
-function Contesant({ onUpdate }) {
+function Contesant({ onUpdate, doubleJeopardyMode }) {
   const [points, setPoints] = useState(0);
   const [name, setName] = useState("Isabella");
 
@@ -24,14 +24,17 @@ function Contesant({ onUpdate }) {
           <h2 className="font-semibold mb-2 text-3xl">{points}</h2>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
-          <ScoreChangeButton onClick={updatePoints} value={100} />
-          <ScoreChangeButton onClick={updatePoints} value={200} />
-          <ScoreChangeButton onClick={updatePoints} value={300} />
-          <ScoreChangeButton onClick={updatePoints} value={400} />
-          <ScoreChangeButton onClick={updatePoints} value={500} />
-          <ScoreChangeButtonDynamic onClick={updatePoints} />
-      </div>
+      
+      {/* {!doubleJeopardyMode && (   */}
+        <div className="flex flex-col justify-center items-center">
+            {doubleJeopardyMode ? <ScoreChangeButton onClick={updatePoints} value={400} /> : <ScoreChangeButton onClick={updatePoints} value={200} />}
+            {doubleJeopardyMode ? <ScoreChangeButton onClick={updatePoints} value={800} /> : <ScoreChangeButton onClick={updatePoints} value={400} />}
+            {doubleJeopardyMode ? <ScoreChangeButton onClick={updatePoints} value={1200} /> : <ScoreChangeButton onClick={updatePoints} value={600} />}
+            {doubleJeopardyMode ? <ScoreChangeButton onClick={updatePoints} value={1600} /> : <ScoreChangeButton onClick={updatePoints} value={800} />}
+            {doubleJeopardyMode ? <ScoreChangeButton onClick={updatePoints} value={2000} /> : <ScoreChangeButton onClick={updatePoints} value={1000} />}
+            <ScoreChangeButtonDynamic onClick={updatePoints} />
+        </div>
+      {/* )} */}
     </div>
   );
 }

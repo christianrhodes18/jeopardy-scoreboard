@@ -9,6 +9,11 @@ function App() {
   // };
 
   const [name, setName] = useState("Isabella");
+  const [doubleJeopardy, setDoubleJeopardy] = useState(false);
+
+  const toggleDoubleJeopardy = () => {
+    setDoubleJeopardy(!doubleJeopardy);
+  };
 
   const updateNames = () => {
     setName(name);
@@ -27,15 +32,15 @@ function App() {
           {/* <img src={logo} alt="logo" width={500} /> */}
         </nav>
         <main className="flex flex-row justify-evenly">
-          <Contesant onUpdate={updateNames} />
-          <Contesant onUpdate={updateNames} />
-          <Contesant onUpdate={updateNames} />
+          <Contesant onUpdate={updateNames} doubleJeopardyMode={doubleJeopardy} />
+          <Contesant onUpdate={updateNames} doubleJeopardyMode={doubleJeopardy} />
+          <Contesant onUpdate={updateNames} doubleJeopardyMode={doubleJeopardy} />
         </main>
-        {/* <div className="flex justify-center">
-          <button className="py-4 px-12 mt-12 text-xl bg-white rounded-lg shadow-lg text-center" onClick={resetScores}>
-            Reset Scores
+        <div className="flex justify-center">
+          <button className="py-4 px-12 mt-12 text-xl bg-white rounded-lg shadow-lg text-center" onClick={toggleDoubleJeopardy}>
+            {doubleJeopardy ? <span className="text-green-500">Double Jeopardy On</span> : <span className="text-red-500">Double Jeopardy Off</span>}
           </button>
-        </div> */}
+        </div>
       </div>
     </>
   );
